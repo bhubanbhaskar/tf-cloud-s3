@@ -19,7 +19,7 @@ resource "random_id" "rand_id" {
 }
 
 resource "aws_s3_bucket" "my-bucket"{
-  bucket = "tf-cloud-${random_id.rand_id.hex}"
+  bucket = "tf-cloud-auto-${random_id.rand_id.hex}"
 
 }
 
